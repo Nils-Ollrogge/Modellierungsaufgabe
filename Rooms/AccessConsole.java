@@ -14,7 +14,7 @@ public class AccessConsole {
     
     /*  ++++++++++ GETTER ++++++++++  */
     
-    public boolean getAccess(Sring key) {
+    public boolean getAccess(String key) {
     
         if (key === this.key) {
             return true;
