@@ -76,6 +76,7 @@ public class Room {
     
         if (!this.adjacentRooms.contains(newAdjacent.ID)) {
             this.adjacentRooms.add(newAdjacent.ID);
+            newAdjacent.adjacentRooms.add(this.ID);
         }
     
     }
