@@ -16,7 +16,7 @@ public class AccessRoom extends Room {
     
     /*  ++++++++++ INTERACTION +++++++++++ */
     
-    protected enter(String key) {
+    public enter(String key) {
     
         if (keyPad.getAccess(key)) {
         
