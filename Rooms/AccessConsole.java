@@ -16,7 +16,7 @@ public class AccessConsole {
     
     public boolean getAccess(String key) {
     
-        if (key === this.key) {
+        if (key.equals(this.key)) {
             return true;
         } else {
             return false;
@@ -29,7 +29,7 @@ public class AccessConsole {
     
     public void setKey(String currKey, String newKey) {
     
-        if (currKey === this.key) {
+        if (currKey.equals(this.key)) {
             
             this.key = newKey;
             
