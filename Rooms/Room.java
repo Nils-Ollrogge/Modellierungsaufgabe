@@ -113,7 +113,7 @@ public class Room {
         System.out.println(this.name + " verlassen.");
     }
     
-    public goTo(Room nextRoom) {
+    public void goTo(Room nextRoom) {
     
         if (adjcentRooms.contains(nextRoom.ID)) {
             
@@ -136,7 +136,7 @@ public class Room {
     
     }
     
-    public goTo(Room nextRoom, String key) {
+    public void goTo(Room nextRoom, String key) {
     
         if (adjcentRooms.contains(nextRoom.ID)) {
             
