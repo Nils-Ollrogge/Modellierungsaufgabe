@@ -13,6 +13,15 @@ public class AccessRoom extends Room {
         
     }
     
+    public AccessRoom(String name, String password) {
+        
+        super(name);
+        
+        keyPad = new AccessConsole();
+        keyPad.setKey("00000", password);
+        
+    }
+    
     
     /*  ++++++++++ INTERACTION +++++++++++ */
     
