@@ -1,34 +1,22 @@
-package Traps;
 import java.util.ArrayList;
 
-import Rooms.Room;
-import Sensors.Sensor;
-import Interfaces.Repairable;
 public abstract class Trap implements Repairable{
 	
 	protected boolean isBroken;
 	protected boolean isEnabled;
 	protected Room room;
 	protected Sensor sensor;
-	protected static ArrayList<Trap> TrapList;
+	protected static ArrayList<Trap> TrapList = new ArrayList<>();
 	protected int trapId;
-	//private ArrayList<Trap> trapList = new ArrayList<>();
 	
-	//abstract declaration of trigger-function; overridden by subclasses 
-	public abstract void trigger();
 	
-	//Überschreiben der Interface-Funktion
-	public void repair(){
-		this.isBroken=false;
-	}
 	
+	//+++++++++++++CONSTRUCTORS++++++++++++++++++++++
 	public Trap(){
 		this.isBroken = false;
 		this.isEnabled= true;
-		this.trapId=Math.random();
-		//TODO: add Trap to any kind of super-inventory-list
-		//trapList.add(this);	
-		//this.trapId=trapList.size();
+		trapList.add(this);	
+		this.trapId=trapList.size();
 		}
 	public Trap(Room newRoom){
 		this();
@@ -46,6 +34,7 @@ public abstract class Trap implements Repairable{
 		this.room=newRoom;
 		}
 	
+	//+++++++++++++++++++++GETTER&SETTER+++++++++++++++++++++
 	public boolean getEnabled() {
 		return this.isEnabled;
 	}
@@ -77,6 +66,8 @@ public abstract class Trap implements Repairable{
 	public ArrayList<Trap> getTrapList(){
 		return trapList;
 	}
+	
+	//++++++++++++++++++SPECIFIC METHODS+++++++++++++
 	public void rearmTrap(){
 		this.isEnabled=true;
 	}
@@ -85,7 +76,12 @@ public abstract class Trap implements Repairable{
 		return trapString;
 		
 	}
-	public void repair() {
-		this.isBroken = false;
-	}
+	//abstract declaration of trigger-function; overridden by subclasses 
+	public abstract void trigger();
+	
+	//Überschreiben der Interface-Funktion repair()
+	public void repair(){
+		this.isBroken=false;
+		}
+	
 }

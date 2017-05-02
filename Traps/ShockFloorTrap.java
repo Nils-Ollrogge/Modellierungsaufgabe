@@ -1,7 +1,3 @@
-package Traps;
-import Rooms.Room;
-import Sensors.Sensor;
-
 public class ShockFloorTrap extends Trap{
 	private int floorTiles;
 	private double voltage;

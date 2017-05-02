@@ -1,7 +1,3 @@
-package Traps;
-import Rooms.Room;
-import Sensors.Sensor;
-
 public class FallingBladesTrap extends Trap {
 	private int numberOfBlades;
 	private double bladeVelocity;

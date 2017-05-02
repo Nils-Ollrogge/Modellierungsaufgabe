@@ -1,4 +1,3 @@
-package Traps;
 public class EMPTrap extends Trap{
 	private double pulseStrength;
 	private double pulseDuration;
