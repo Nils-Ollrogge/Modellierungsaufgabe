@@ -45,7 +45,7 @@ public class Room {
         
     }
     
-    public Room[] getAdjacents() {
+    public ArrayList<int> getAdjacents() {
         
         return this.adjacentRooms;
         
@@ -85,6 +85,7 @@ public class Room {
     
         if (this.adjacentRooms.contains(delAdjacent.ID)) {
             this.adjacentRooms.remove(delAdjacent.ID);
+            delAdjacent.adjacentRooms.remove(this.ID);
         }
     
     }
