@@ -5,7 +5,7 @@ public class AccessConsole {
     
     /*  ++++++++++ CONSTRUCTORS ++++++++++  */
     
-    public AccessConsole {
+    public AccessConsole() {
     
         key = "00000";
     
