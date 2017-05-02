@@ -10,7 +10,8 @@ public abstract class Trap implements Repairable{
 	protected boolean isEnabled;
 	protected Room room;
 	protected Sensor sensor;
-	protected double trapId;
+	protected static ArrayList<Trap> TrapList;
+	protected int trapId;
 	//private ArrayList<Trap> trapList = new ArrayList<>();
 	
 	//abstract declaration of trigger-function; overridden by subclasses 
@@ -69,8 +70,7 @@ public abstract class Trap implements Repairable{
 		this.sensor = newSensor;
 		System.out.println("Sensor gewechselt. Neuer Sensor der Falle: "+sensor);
 	}
-/* Die folgenden Funktionen werden wahrscheinlich noch geändert, je nachdem, wie wir eine übergeordnete Inventar-Superklasse organisieren
-	public double getTrapId() {
+	public int getTrapId() {
 		return this.trapId;
 	}
 
@@ -85,5 +85,7 @@ public abstract class Trap implements Repairable{
 		return trapString;
 		
 	}
-*/	
+	public void repair() {
+		this.isBroken = false;
+	}
 }
