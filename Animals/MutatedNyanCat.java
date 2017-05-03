@@ -1,7 +1,8 @@
 
 public class MutatedNyanCat extends Animal {
+	
 	public MutatedNyanCat() {
-		numberOfLegs=4;
+		this.numberOfLegs=4;
 	}
 	public void fly() {
 		System.out.println("Swoosh!");
