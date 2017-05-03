@@ -1,4 +1,3 @@
-package Sensors;
 import java.util.ArrayList;
 
 public class PressurePlateSensor extends Sensor {

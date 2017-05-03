@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public abstract class Trap implements Repairable{
+public abstract class Trap implements RepairInterface, Putable{
 	
 	protected boolean isBroken;
 	protected boolean isEnabled;

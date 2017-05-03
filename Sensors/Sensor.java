@@ -1,7 +1,6 @@
-package Sensors;
 import java.util.ArrayList;
 
-public abstract class Sensor {
+public abstract class Sensor implements RepairInterface, Putable{
 	protected boolean isBroken;
 	protected boolean isScanning;
 	

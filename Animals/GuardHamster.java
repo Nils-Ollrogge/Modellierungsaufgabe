@@ -1,9 +1,11 @@
 
 public class GuardHamster extends Animal {
-	double trainingStatus=0.5;
+	
+	double trainingStatus;
 	
 	public GuardHamster(){
 		this.numberOfLegs=4;
+		this.trainingStatus=0.5;
 		}
 	public void collectFood() {
 		System.out.println("Erfolgreich essen gesammelt!");

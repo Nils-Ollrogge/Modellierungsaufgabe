@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.HashMap; 
 import java.util.Iterator;
 
-public abstract class Machine {
+public abstract class Machine implements Putable{
 	protected static final int CLONE_ATOR = 0;
     protected static final int FAST_FOOD_INATOR = 1;
     protected static final int SELF_DESTROY_INATOR = 2;

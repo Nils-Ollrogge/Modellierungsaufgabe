@@ -5,7 +5,7 @@
 	is_ = boolean
 */
 
-public abstract class Gun {
+public abstract class Gun implements Putable{
 	// Constants
     protected static final int CAKE_CANNON = 0;
     protected static final int KITTY_CAT_BAZOOKA = 1;

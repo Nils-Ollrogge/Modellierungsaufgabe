@@ -1,8 +1,8 @@
 
 public class EikeVil extends Person {
 	public Eike_Vil(){
-		this.isEvil= true;
-		this.age= 32;
+		this.setEvil(true);
+		this.age = 32;
 			}
 	public void planEvil(){
 		System.out.println("Pläne erfolgreich geschmiedet!");

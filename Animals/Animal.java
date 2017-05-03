@@ -1,5 +1,5 @@
 
-public abstract class Animal {
+public abstract class Animal implements Putable{
 	protected int numberOfLegs;
 	protected boolean isGuarding = false;
 	protected Room location;
@@ -20,5 +20,16 @@ public abstract class Animal {
 			this.isGuarding=false;
 		}
 	}
+	
+	public int getNumberOfLegs() {
+	return this.numberOfLegs;
+	}
+	public boolean getIsGuarding() {
+		return this.isGuarding;
+	} 
+	public Room getLocation() {
+		return this.location;
+	}
+	
 	
 }
